@@ -25,10 +25,9 @@ class FastQDecompressor(object):
         self.logger.setLevel(logging.DEBUG)
 
 
-
     def decompress_alt(self):
         
-        command_line= "bzcat -dkf %s > %s" %(self.compressed_fastq_file_path, self.fastq_file_path)
+        command_line= "sbatch decompress.sh %s %s" %(self.compressed_fastq_file_path, self.fastq_file_path)
         p = subprocess.Popen(command_line, shell= True, stderr=subprocess.STDOUT)
         out, err = p.communicate()
         ### log
