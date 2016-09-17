@@ -1,5 +1,5 @@
 import glob,os
-
+#learner
 class FastQPairLearner(object):
     """
         RNASeqFileLearner class is specifically written for 
