@@ -3,7 +3,7 @@
 #SBATCH -p core
 #SBATCH -n 8
 #SBATCH -t 0:30:00
-#SBATCH -J kallisto.quant.new.GRCh38.kemal
+#SBATCH -J bz2.decompression.kemal
 #SBATCH --mail-type=ALL
 
 # SNIC2016-1-184
