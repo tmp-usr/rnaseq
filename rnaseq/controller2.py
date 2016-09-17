@@ -4,7 +4,7 @@ from fastq_pair_learner import FastQPairLearner
 from fastq_decompressor import FastQDecompressor
 from rnaseq_runner import RNASeqRunner
 
-
+## change
 class Controller(object):
     def __init__(self, compressed_input_dir, fastq_input_dir, output_dir):
         self.fastq_pair_learner= FastQPairLearner(compressed_input_dir)     
