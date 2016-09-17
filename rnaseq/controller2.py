@@ -84,7 +84,7 @@ class Controller(object):
 #compressed_input_dir= "/Volumes/Samsung_T3/hek293"
 #fastq_input_dir= "/Users/kemal/Desktop/postdoc/projects/hek293"
 #output_dir= "/Users/kemal/Desktop/postdoc/projects/hek293/outputs"
-
+# update
 compressed_input_dir= "/proj/b2016253/hek293"
 fastq_input_dir= "/home/adilm/glob/projects/hek293"
 output_dir= "/home/adilm/glob/projects/hek293/outputs"
