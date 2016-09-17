@@ -73,10 +73,10 @@ class Controller(object):
             self.fastq_pair1= FastQDecompressor(self.current_fastq_pair1_file_path, self.fastq_input_dir).decompress()
             self.fastq_pair2= FastQDecompressor(self.current_fastq_pair2_file_path, self.fastq_input_dir).decompress()
 
-            rnaseq_runner= RNASeqRunner(sample_name, self.fastq_pair1, self.fastq_pair2, self.output_dir)
+            #rnaseq_runner= RNASeqRunner(sample_name, self.fastq_pair1, self.fastq_pair2, self.output_dir)
             i+=1
-            #if i == 1:
-            #    break
+            if i == 1:
+                break
         ### log
         self.logger.debug("RNA-Seq pipeline finished!")
 

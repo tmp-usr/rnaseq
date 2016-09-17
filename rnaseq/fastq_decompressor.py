@@ -18,7 +18,7 @@ class FastQDecompressor(object):
         ### log
         self.logger.debug("Decompressing %s" % os.path.basename(compressed_fastq_file_path))
         self.decompress_alt()
-        self.logger.debug("Decompression finished!")
+        self.logger.debug("Decompression submitted!")
     
     def set_logger(self):
         self.logger= logging.getLogger("rnaseq.fastq_decompressor.FastQDecomompressor")

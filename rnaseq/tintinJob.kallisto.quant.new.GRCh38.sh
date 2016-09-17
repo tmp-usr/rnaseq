@@ -7,7 +7,7 @@
 #SBATCH -J kallisto.quant.new.GRCh38.kemal
 #SBATCH --mail-type=ALL
 
-# SNIC2016-1-184
+#### SNIC2016-1-184
 
 ####SBATCH --mail-user kemalsanli1@gmail.com
 echo "this script will use 16 cores and 30 mins wall time (maximum execution time)"
