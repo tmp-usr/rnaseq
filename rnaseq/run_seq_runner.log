@@ -1,8 +1,110 @@
-2016-09-17 19:40:24,588 - RNA-Seq pipeline started!
-2016-09-17 19:40:24,588 - Decompressing NG-10099_Freestyle293__1_lib134092_4708_1_1.fastq.bz2
-2016-09-17 19:40:24,640 - None
-2016-09-17 19:40:24,640 - Decompression submitted!
-2016-09-17 19:40:27,480 - Decompressing NG-10099_Freestyle293__1_lib134092_4708_1_2.fastq.bz2
-2016-09-17 19:40:27,523 - None
-2016-09-17 19:40:27,523 - Decompression submitted!
-2016-09-17 19:40:28,271 - RNA-Seq pipeline finished!
+2016-09-17 20:30:09,511 - RNA-Seq pipeline started!
+2016-09-17 20:30:09,511 - Decompressing NG-10099_Freestyle293__1_lib134092_4708_1_1.fastq.bz2
+2016-09-17 20:30:09,550 - None
+2016-09-17 20:30:09,550 - Decompression submitted!
+2016-09-17 20:30:09,550 - Decompressing NG-10099_Freestyle293__1_lib134092_4708_1_2.fastq.bz2
+2016-09-17 20:30:09,589 - None
+2016-09-17 20:30:09,589 - Decompression submitted!
+2016-09-17 20:30:09,589 - Decompressing NG-10099_293_T__3_lib134082_4708_4_1.fastq.bz2
+2016-09-17 20:30:09,623 - None
+2016-09-17 20:30:09,623 - Decompression submitted!
+2016-09-17 20:30:09,623 - Decompressing NG-10099_293_T__3_lib134082_4708_4_2.fastq.bz2
+2016-09-17 20:30:09,673 - None
+2016-09-17 20:30:09,673 - Decompression submitted!
+2016-09-17 20:30:09,673 - Decompressing NG-10099_293_T__2_lib134081_4708_3_1.fastq.bz2
+2016-09-17 20:30:09,718 - None
+2016-09-17 20:30:09,718 - Decompression submitted!
+2016-09-17 20:30:09,718 - Decompressing NG-10099_293_T__2_lib134081_4708_3_2.fastq.bz2
+2016-09-17 20:30:09,752 - None
+2016-09-17 20:30:09,752 - Decompression submitted!
+2016-09-17 20:30:09,752 - Decompressing NG-10099_Freestyle293__2_lib134093_4708_1_1.fastq.bz2
+2016-09-17 20:30:09,782 - None
+2016-09-17 20:30:09,782 - Decompression submitted!
+2016-09-17 20:30:09,782 - Decompressing NG-10099_Freestyle293__2_lib134093_4708_1_2.fastq.bz2
+2016-09-17 20:30:09,816 - None
+2016-09-17 20:30:09,816 - Decompression submitted!
+2016-09-17 20:30:09,816 - Decompressing NG-10099_293_T__1_lib134080_4708_3_1.fastq.bz2
+2016-09-17 20:30:09,845 - None
+2016-09-17 20:30:09,845 - Decompression submitted!
+2016-09-17 20:30:09,845 - Decompressing NG-10099_293_T__1_lib134080_4708_3_2.fastq.bz2
+2016-09-17 20:30:09,874 - None
+2016-09-17 20:30:09,874 - Decompression submitted!
+2016-09-17 20:30:09,874 - Decompressing NG-10099_293_H__2_lib134090_4708_1_1.fastq.bz2
+2016-09-17 20:30:09,907 - None
+2016-09-17 20:30:09,907 - Decompression submitted!
+2016-09-17 20:30:09,907 - Decompressing NG-10099_293_H__2_lib134090_4708_1_2.fastq.bz2
+2016-09-17 20:30:10,240 - None
+2016-09-17 20:30:10,240 - Decompression submitted!
+2016-09-17 20:30:10,246 - Decompressing NG-10099_293_H__1_lib134089_4710_4_1.fastq.bz2
+2016-09-17 20:30:10,590 - None
+2016-09-17 20:30:10,590 - Decompression submitted!
+2016-09-17 20:30:10,590 - Decompressing NG-10099_293_H__1_lib134089_4710_4_2.fastq.bz2
+2016-09-17 20:30:10,625 - None
+2016-09-17 20:30:10,625 - Decompression submitted!
+2016-09-17 20:30:10,631 - Decompressing NG-10099_293_F__3_lib134088_4710_4_1.fastq.bz2
+2016-09-17 20:30:10,668 - None
+2016-09-17 20:30:10,668 - Decompression submitted!
+2016-09-17 20:30:10,668 - Decompressing NG-10099_293_F__3_lib134088_4710_4_2.fastq.bz2
+2016-09-17 20:30:10,703 - None
+2016-09-17 20:30:10,703 - Decompression submitted!
+2016-09-17 20:30:10,703 - Decompressing NG-10099_293_F__2_lib134087_4710_4_1.fastq.bz2
+2016-09-17 20:30:10,732 - None
+2016-09-17 20:30:10,732 - Decompression submitted!
+2016-09-17 20:30:10,732 - Decompressing NG-10099_293_F__2_lib134087_4710_4_2.fastq.bz2
+2016-09-17 20:30:10,761 - None
+2016-09-17 20:30:10,761 - Decompression submitted!
+2016-09-17 20:30:10,761 - Decompressing NG-10099_293_F__1_lib134086_4710_4_1.fastq.bz2
+2016-09-17 20:30:10,790 - None
+2016-09-17 20:30:10,790 - Decompression submitted!
+2016-09-17 20:30:10,790 - Decompressing NG-10099_293_F__1_lib134086_4710_4_2.fastq.bz2
+2016-09-17 20:30:10,824 - None
+2016-09-17 20:30:10,824 - Decompression submitted!
+2016-09-17 20:30:10,824 - Decompressing NG-10099_293_E__3_lib134085_4710_4_1.fastq.bz2
+2016-09-17 20:30:10,858 - None
+2016-09-17 20:30:10,858 - Decompression submitted!
+2016-09-17 20:30:10,858 - Decompressing NG-10099_293_E__3_lib134085_4710_4_2.fastq.bz2
+2016-09-17 20:30:10,892 - None
+2016-09-17 20:30:10,892 - Decompression submitted!
+2016-09-17 20:30:10,898 - Decompressing NG-10099_293_E__2_lib134084_4710_4_1.fastq.bz2
+2016-09-17 20:30:10,922 - None
+2016-09-17 20:30:10,922 - Decompression submitted!
+2016-09-17 20:30:10,922 - Decompressing NG-10099_293_E__2_lib134084_4710_4_2.fastq.bz2
+2016-09-17 20:30:10,951 - None
+2016-09-17 20:30:10,951 - Decompression submitted!
+2016-09-17 20:30:10,951 - Decompressing NG-10099_293_E_1_lib137067_4755_1_1.fastq.bz2
+2016-09-17 20:30:10,985 - None
+2016-09-17 20:30:10,985 - Decompression submitted!
+2016-09-17 20:30:10,985 - Decompressing NG-10099_293_E_1_lib137067_4755_1_2.fastq.bz2
+2016-09-17 20:30:11,019 - None
+2016-09-17 20:30:11,019 - Decompression submitted!
+2016-09-17 20:30:11,019 - Decompressing NG-10099_293_H__3_lib134091_4708_1_1.fastq.bz2
+2016-09-17 20:30:11,054 - None
+2016-09-17 20:30:11,054 - Decompression submitted!
+2016-09-17 20:30:11,054 - Decompressing NG-10099_293_H__3_lib134091_4708_1_2.fastq.bz2
+2016-09-17 20:30:11,089 - None
+2016-09-17 20:30:11,089 - Decompression submitted!
+2016-09-17 20:30:11,089 - Decompressing NG-10099_Freestyle293__3_lib134094_4708_1_1.fastq.bz2
+2016-09-17 20:30:11,113 - None
+2016-09-17 20:30:11,113 - Decompression submitted!
+2016-09-17 20:30:11,113 - Decompressing NG-10099_Freestyle293__3_lib134094_4708_1_2.fastq.bz2
+2016-09-17 20:30:11,147 - None
+2016-09-17 20:30:11,147 - Decompression submitted!
+2016-09-17 20:30:11,147 - Decompressing NG-10099_HEK293__1_lib134077_4708_1_1.fastq.bz2
+2016-09-17 20:30:11,187 - None
+2016-09-17 20:30:11,187 - Decompression submitted!
+2016-09-17 20:30:11,187 - Decompressing NG-10099_HEK293__1_lib134077_4708_1_2.fastq.bz2
+2016-09-17 20:30:11,211 - None
+2016-09-17 20:30:11,211 - Decompression submitted!
+2016-09-17 20:30:11,211 - Decompressing NG-10099_HEK293__2_lib134078_4708_3_1.fastq.bz2
+2016-09-17 20:30:11,250 - None
+2016-09-17 20:30:11,250 - Decompression submitted!
+2016-09-17 20:30:11,250 - Decompressing NG-10099_HEK293__2_lib134078_4708_3_2.fastq.bz2
+2016-09-17 20:30:11,284 - None
+2016-09-17 20:30:11,284 - Decompression submitted!
+2016-09-17 20:30:11,290 - Decompressing NG-10099_HEK293__3_lib134079_4708_3_1.fastq.bz2
+2016-09-17 20:30:11,318 - None
+2016-09-17 20:30:11,318 - Decompression submitted!
+2016-09-17 20:30:11,318 - Decompressing NG-10099_HEK293__3_lib134079_4708_3_2.fastq.bz2
+2016-09-17 20:30:11,357 - None
+2016-09-17 20:30:11,357 - Decompression submitted!
+2016-09-17 20:30:11,357 - RNA-Seq pipeline finished!

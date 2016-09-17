@@ -52,7 +52,7 @@ echo "parsing kallisto output"
 #cleaning data
 
 #echo "Removing the decompressed fastq pair."
-#rm $1 $2
+rm $1 $2
 echo "finished"
 
 
