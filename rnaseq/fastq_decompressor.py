@@ -6,19 +6,22 @@ from bz2 import BZ2File
 
 
 class FastQDecompressor(object):
-    def __init__(self, compressed_fastq_file_path, decompression_dir=".", keep_original= True):
+    def __init__(self, compressed_fastq_file_path, decompression_dir=".", output_dir= ".", keep_original= True):
         self.compressed_fastq_file_path = compressed_fastq_file_path
         fastq_base= os.path.basename(self.compressed_fastq_file_path.rstrip(".bz2"))
         self.fastq_file_path= os.path.join(decompression_dir, fastq_base)
         self.decompression_dir= decompression_dir
-    
+        self.output_dir= output_dir
+        
+        if not os.path.exists(self.output_dir):
+            os.makedirs(self.output_dir)
+        
+        self.slurm_output_file= os.path.join(self.output_dir, fastq_base) + ".out"   
         self.keep_original = keep_original
         
         self.set_logger()
         ### log
-        self.logger.debug("Decompressing %s" % os.path.basename(compressed_fastq_file_path))
         #self.decompress_alt()
-        self.logger.debug("Decompression submitted!")
     
     def set_logger(self):
         self.logger= logging.getLogger("rnaseq.fastq_decompressor.FastQDecomompressor")
@@ -26,13 +29,13 @@ class FastQDecompressor(object):
 
 
     def decompress_alt(self):
-        
-        command_line= "sbatch decompress.sh %s %s" %(self.compressed_fastq_file_path, self.fastq_file_path)
+        command_line= "sbatch --output=%s decompress.sh %s %s" %(self.slurm_output_file, self.compressed_fastq_file_path, self.fastq_file_path)
         p = subprocess.Popen(command_line, shell= True, stderr=subprocess.STDOUT)
         out, err = p.communicate()
         ### log
         self.logger.debug(out)
 
+        self.logger.debug("Decompression submitted!")
 
     
     def decompress(self):

@@ -26,7 +26,7 @@ outDir=$4
 
 
 #if [ ! -d $outDir ];then
-#	mkdir $outDir
+#	mkdir -p $outDir
 #fi
 
 #loading kallisto library
@@ -37,22 +37,18 @@ echo "kallisto preprocessing"
 kallisto quant -i $indFile -o $outDir -t 16 $pair1 $pair2
 echo "preprocessed"
 
-#making directory to save temporary files
-tempDir=$outDir/$num
-if [ ! -d $tempDir ];then
-	mkdir $tempDir
-fi
-cd $tempDir
-echo `pwd`
-
 #parsing kallisto output and saving parsed result into outDir
 echo "parsing kallisto output" 
-bash /home/adilm/repos/rnaseq/kallisto.isoform.to.gene.sh $tempDir/abundance.tsv  $tempDir/rnaseq.$num
+bash /home/adilm/repos/rnaseq/rnaseq/kallisto.isoform.to.gene.sh $outDir/abundance.tsv  $outDir/rnaseq.$num
 
 #cleaning data
 echo "Removing the decompressed fastq pair."
-rm -r $tempDir
 rm $pair1 $pair2 
+rm $outDir/abundance.tsv
+rm $outDir/abundance.h5
+rm $outDir/run_info.json
+rm $outDir/*.out
+
 echo "finished"
 
 
