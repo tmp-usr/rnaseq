@@ -44,7 +44,6 @@ bash /home/adilm/repos/rnaseq/rnaseq/kallisto.isoform.to.gene.sh $outDir/abundan
 #cleaning data
 echo "Removing the decompressed fastq pair."
 rm $pair1 $pair2 
-rm $outDir/abundance.tsv
 rm $outDir/abundance.h5
 rm $outDir/run_info.json
 rm $outDir/*.out
