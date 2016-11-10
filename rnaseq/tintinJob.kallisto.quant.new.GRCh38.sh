@@ -34,7 +34,7 @@ outDir=$4
 
 #preprocessing raw file by kallisto
 echo "kallisto preprocessing"
-kallisto quant -i $indFile -o $outDir -t 16 $pair1 $pair2
+kallisto quant -i $indFile -o $outDir -t 16 --bootstrap-samples=100 $pair1 $pair2
 echo "preprocessed"
 
 #parsing kallisto output and saving parsed result into outDir
@@ -44,8 +44,6 @@ bash /home/adilm/repos/rnaseq/rnaseq/kallisto.isoform.to.gene.sh $outDir/abundan
 #cleaning data
 echo "Removing the decompressed fastq pair."
 rm $pair1 $pair2 
-rm $outDir/abundance.h5
-rm $outDir/run_info.json
 rm $outDir/*.out
 
 echo "finished"

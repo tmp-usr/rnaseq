@@ -2,7 +2,7 @@ import glob,os
 #learner
 class FastQPairLearner(object):
     """
-        RNASeqFileLearner class is specifically written for 
+        RNASeqPairLearner class is specifically written for 
         the compressed fastq files retrieved from GATC. File 
         names include project id, sample id and pair id. 
         
