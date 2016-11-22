@@ -6,19 +6,29 @@ from bz2 import BZ2File
 
 
 class FastQDecompressor(object):
-    def __init__(self, compressed_fastq_file_path, decompression_dir=".", output_dir= ".", keep_original= True):
+    """
+        accepts a compressed fastq file input and yields a 
+        decompressed version in the same directory.
+    """
+    
+    def __init__(self, compressed_fastq_file_path, decompression_dir=".", output_dir= ".", keep_original= True, compression_type= "bz2"):
+        
         self.compressed_fastq_file_path = compressed_fastq_file_path
         fastq_base= os.path.basename(self.compressed_fastq_file_path.rstrip(".bz2"))
         self.fastq_file_path= os.path.join(decompression_dir, fastq_base)
         self.decompression_dir= decompression_dir
         self.output_dir= output_dir
-        
+        self.compression_type= compression_type
+
+
         if not os.path.exists(self.output_dir):
             os.makedirs(self.output_dir)
+        
         
         self.slurm_output_file= os.path.join(self.output_dir, fastq_base) + ".out"   
         self.keep_original = keep_original
         
+
         self.set_logger()
         ### log
         #self.decompress_alt()
