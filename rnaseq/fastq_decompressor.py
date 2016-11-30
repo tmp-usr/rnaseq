@@ -11,11 +11,11 @@ class FastQDecompressor(object):
         decompressed version in the same directory.
     """
     
-    def __init__(self, compressed_fastq_file_path, decompression_dir=".", output_dir= ".", keep_original= True, compression_type= "bz2"):
+    def __init__(self, compressed_fastq_file_path, decompression_dir=".", output_dir= ".", keep_original= True, compression_type= ".gz", sample_name= "", replicate_name= ""):
         
         self.compressed_fastq_file_path = compressed_fastq_file_path
-        fastq_base= os.path.basename(self.compressed_fastq_file_path.rstrip(".bz2"))
-        self.fastq_file_path= os.path.join(decompression_dir, fastq_base)
+        fastq_base= os.path.basename(self.compressed_fastq_file_path.rstrip(compression_type))
+        self.fastq_file_path= os.path.join(decompression_dir, sample_name, replicate_name, fastq_base)
         self.decompression_dir= decompression_dir
         self.output_dir= output_dir
         self.compression_type= compression_type
@@ -46,9 +46,10 @@ class FastQDecompressor(object):
         self.logger.debug(out)
 
         self.logger.debug("Decompression submitted!")
+        return self.fastq_file_path
 
     
-    def decompress(self):
+    def decompress_bzip(self):
         compressed_fastq_file = BZ2File(self.compressed_fastq_file_path)
         fastq_file= open(self.fastq_file_path, mode= "w")
             
@@ -59,4 +60,14 @@ class FastQDecompressor(object):
     
         return self.fastq_file_path
 
+
+    def decompress_gzip(self):
+        with gzip.open(self.compressed_fastq_file_path, "rb") as compressed_f:
+            with open(self.fastq_file_path, "wb") as fastq_file:
+                fastq_file.write(content= compressed_f.read())
+                
+        if not self.keep_original:
+            os.remove(self.compressed_fastq_file_path)
+    
+        return self.fastq_file_path
 

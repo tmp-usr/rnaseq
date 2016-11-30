@@ -17,5 +17,5 @@ fi
 compressed_file=$1
 decompressed_file=$2
 
-bzcat -dkf $compressed_file > $decompressed_file
+zcat -d $compressed_file > $decompressed_file
 

@@ -25,6 +25,7 @@ class RNASeqRunner(object):
         ### log
         self.logger.debug(out)
 
+
     def set_logger(self):
         self.logger= logging.getLogger("rnaseq.rnaseq_runner.RNASeq_Runner")
         self.logger.setLevel(logging.DEBUG)
